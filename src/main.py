@@ -53,3 +53,8 @@ def get_all_comments():
     # print e.query(Comment).all()
     all_comments = e.session.query(Comment).all()
     return json.dumps([comment.json_of_comment() for comment in all_comments])
+
+@app.route("/comment/<int:article_id>")
+def get_comment_by_id(article_id):
+    all_comments = e.session.query(Comment).filter_by(article_id=article_id).all()
+    return json.dumps([comment.json_of_comment() for comment in all_comments])
