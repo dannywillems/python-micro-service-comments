@@ -16,6 +16,27 @@ FLASK_APP=src/main.py flask run
 ```
 
 The application is running on `http://localhost:5000`
+
+## API
+
+- `GET /comment`: get all comments in JSON.
+- `GET /comment/article_id`: get all comments by article ID.
+- `POST /comment`: post a new comment.
+
+## JSON Format.
+
+This is the JSON returned by the GET commands.
+
+- *author_id*: the author id - Integer.
+- *article_id*: the article id - Integer.
+- *datetime*: when the comment has been posted. The format is **Year-Month-Day Hour:Minute:Second**. String.
+- *id*: the comment ID - Integer.
+- *moderated*: `true` if the comment has been accepted else `false` - Boolean.
+- *text*: the comment text - String.
+
+## Errors.
+
+
 ## Test
 
 ```
