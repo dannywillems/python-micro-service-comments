@@ -27,12 +27,12 @@ The application is running on `http://localhost:5000`
 
 This is the JSON returned by the GET commands.
 
-- *author_id*: the author id - Integer.
-- *article_id*: the article id - Integer.
-- *datetime*: when the comment has been posted. The format is **Year-Month-Day Hour:Minute:Second**. String.
-- *id*: the comment ID - Integer.
-- *moderated*: `true` if the comment has been accepted else `false` - Boolean.
-- *text*: the comment text - String.
+- **author_id**: the author id - Integer.
+- **article_id**: the article id - Integer.
+- **datetime**: when the comment has been posted. The format is *Year-Month-Day Hour:Minute:Second* (e.g.: "2017-07-05 10:00:00"). String.
+- **id**: the comment ID - Integer.
+- **moderated**: `true` if the comment has been accepted else `false` - Boolean.
+- **text**: the comment text - String.
 
 ## Errors.
 
